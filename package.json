@@ -1,0 +1,17 @@
+{
+  "name": "cms-backend",
+  "version": "1.0.0",
+  "description": "Count-Min Sketch frequency estimation backend (API + CLI, TypeScript/Node.js/SQLite)",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/src/server.js",
+    "cli": "node dist/src/cli.js",
+    "demo": "node dist/src/demo.js",
+    "test": "npm run build && node --test \"dist/test/*.test.js\""
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "5.9"
+  }
+}
